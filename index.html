@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="var(--accent)"/><text x="32" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#fff">JL</text></svg><span>JOHN LION LLC</span></a>
+  <a class="brand" href="/"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="var(--accent)"/><text x="32" y="43" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#0b0d12">JL</text></svg><span>JOHN LION LLC</span></a>
   <nav class="nav">
     <a href="/#apps" aria-current="page">Apps</a>
     <a href="/support.html">Support</a>
@@ -21,49 +21,78 @@
   </nav>
 </div></header>
 <main>
-<div class="hero"><div class="wrap">
-  <p class="eyebrow">Independent app studio</p>
-  <h1>Useful apps, made with care.</h1>
-  <p>John Lion LLC builds focused iPhone apps for creators, students and working people, designed to respect your time and keep your data on your device.</p>
-</div></div>
-<section id="apps"><div class="wrap">
-  <h2>Our apps</h2>
-  <p class="sub">Currently in development for iPhone.</p>
-  <div class="apps">
-    <article class="app">
-      <div class="icon" style="background:#e8772e">T</div>
-      <h3>Time Flies</h3>
-      <p>Sort your photos and videos in quick 5–30 minute sessions, then post them. Everything is processed on your phone.</p>
-      <span class="tag">Coming soon</span><br><a class="more" href="/timeflies/">Learn more →</a>
-    </article>
-    <article class="app">
-      <div class="icon" style="background:#8a6a52">M</div>
-      <h3>Meep</h3>
-      <p>A daily companion for sonographers: study decks, registry practice, a 3D anatomy viewer and a case journal.</p>
-      <span class="tag">Coming soon</span>
-    </article>
-    <article class="app">
-      <div class="icon" style="background:#3d4fd6">X</div>
-      <h3>XAELO BOX</h3>
-      <p>Business and creative tools for musicians: income, taxes and budgets alongside voice memos, notes and a rhyme dictionary.</p>
-      <span class="tag">Coming soon</span>
-    </article>
-    <article class="app">
-      <div class="icon" style="background:#4f6b3a">B</div>
-      <h3>Bearings</h3>
-      <p>Learn the outdoors and the world: hunting, dogs, current events and a private journal.</p>
-      <span class="tag">Coming soon</span>
-    </article>
+<div class="lib-hero"><div class="wrap">
+  <div class="carousel" aria-roledescription="carousel" aria-label="Featured apps">
+    <div class="slides"><a class="slide" href="/apps/sono-bestie/" style="--c:#F28C28">
+      <img src="/img/hero/sono-bestie.jpg" alt="" >
+      <div class="cap"><span class="badge">Coming soon</span><h2>Sono Bestie</h2><p>What&#x27;s in your scrubs?</p><span class="pill">Learn more</span></div>
+    </a><a class="slide" href="/apps/out-the-chat/" style="--c:#6FB44F">
+      <img src="/img/hero/out-the-chat.jpg" alt="" loading="lazy">
+      <div class="cap"><span class="badge">In testing</span><h2>Out The Chat</h2><p>Find your crew.</p><span class="pill">Learn more</span></div>
+    </a><a class="slide" href="/timeflies/" style="--c:#FF7A2B">
+      <img src="/img/hero/back-2-the-past.jpg" alt="" loading="lazy">
+      <div class="cap"><span class="badge">Coming soon</span><h2>Back 2 The Past</h2><p>Your camera roll, ten minutes at a time.</p><span class="pill">Learn more</span></div>
+    </a></div>
+    <button class="arrow prev" aria-label="Previous app">&#8249;</button>
+    <button class="arrow next" aria-label="Next app">&#8250;</button>
+    <div class="dots" aria-hidden="true"><i class=on></i><i></i><i></i></div>
   </div>
+</div></div>
+<section id="apps" class="library"><div class="wrap">
+  <h2>App library</h2>
+  <p class="sub">Focused iPhone apps, made by one small studio.</p>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-f="all">All</button>
+    <button role="tab" aria-selected="false" data-f="soon">Coming soon</button>
+  </div>
+  <div class="tiles"><a class="tile" href="/apps/sono-bestie/" data-status="soon" style="--c:#F28C28">
+      <div class="cover"><img src="/img/covers/sono-bestie.jpg" alt="Sono Bestie cover" loading="lazy" width="600" height="800"><span class="badge">Coming soon</span></div>
+      <h3>Sono Bestie</h3><p>What&#x27;s in your scrubs?</p>
+    </a><a class="tile" href="/apps/out-the-chat/" data-status="soon" style="--c:#6FB44F">
+      <div class="cover"><img src="/img/covers/out-the-chat.jpg" alt="Out The Chat cover" loading="lazy" width="600" height="800"><span class="badge">In testing</span></div>
+      <h3>Out The Chat</h3><p>Find your crew.</p>
+    </a><a class="tile" href="/timeflies/" data-status="soon" style="--c:#FF7A2B">
+      <div class="cover"><img src="/img/covers/back-2-the-past.jpg" alt="Back 2 The Past cover" loading="lazy" width="600" height="800"><span class="badge">Coming soon</span></div>
+      <h3>Back 2 The Past</h3><p>Your camera roll, ten minutes at a time.</p>
+    </a><a class="tile" href="/apps/xaelo-box/" data-status="soon" style="--c:#5B72F2">
+      <div class="cover"><img src="/img/covers/xaelo-box.jpg" alt="XAELO BOX cover" loading="lazy" width="600" height="800"><span class="badge">Coming soon</span></div>
+      <h3>XAELO BOX</h3><p>Run the business side of your music.</p>
+    </a><a class="tile" href="/apps/bearings/" data-status="soon" style="--c:#8DAE5C">
+      <div class="cover"><img src="/img/covers/bearings.jpg" alt="Bearings cover" loading="lazy" width="600" height="800"><span class="badge">Coming soon</span></div>
+      <h3>Bearings</h3><p>Learn the outdoors and the world.</p>
+    </a><a class="tile" href="/apps/card-wallet/" data-status="soon" style="--c:#1CB886">
+      <div class="cover"><img src="/img/covers/card-wallet.jpg" alt="Card Wallet cover" loading="lazy" width="600" height="800"><span class="badge">Coming soon</span></div>
+      <h3>Card Wallet</h3><p>See your cards and debt in one place.</p>
+    </a><a class="tile" href="/apps/the-lost-library/" data-status="soon" style="--c:#E0773E">
+      <div class="cover"><img src="/img/covers/the-lost-library.jpg" alt="The Lost Library cover" loading="lazy" width="600" height="800"><span class="badge">Coming soon</span></div>
+      <h3>The Lost Library</h3><p>History, connected.</p>
+    </a></div>
 </div></section>
-<section><div class="wrap">
-  <h2>Get in touch</h2>
-  <p class="sub">Questions, feedback or business inquiries: <a href="mailto:support@johnlionllc.com">support@johnlionllc.com</a></p>
+<section class="band"><div class="wrap">
+  <h2>Useful apps, made with care.</h2>
+  <p>John Lion LLC builds apps for creators, students and working people, designed to respect your time and keep your data on your device. Questions? <a href="mailto:support@johnlionllc.com">support@johnlionllc.com</a></p>
 </div></section>
 </main>
 <footer><div class="wrap">
   <span>&copy; 2026 John Lion LLC. All rights reserved.</span>
   <span><a href="/support.html">Support</a> &nbsp;·&nbsp; <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:support@johnlionllc.com">support@johnlionllc.com</a></span>
 </div></footer>
+<script>
+(function(){
+  var s=document.querySelector('.slides'),d=document.querySelectorAll('.dots i'),n=d.length,t;
+  function idx(){return Math.round(s.scrollLeft/s.clientWidth)}
+  function go(i){s.scrollTo({left:((i%n)+n)%n*s.clientWidth})}
+  s.addEventListener('scroll',function(){var i=idx();d.forEach(function(x,k){x.classList.toggle('on',k===i)})});
+  document.querySelector('.prev').onclick=function(){go(idx()-1)};
+  document.querySelector('.next').onclick=function(){go(idx()+1)};
+  function auto(){clearInterval(t);t=setInterval(function(){go(idx()+1)},6000)}
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){auto();s.addEventListener('pointerdown',function(){clearInterval(t)})}
+  var tabs=document.querySelectorAll('.tabs button');
+  tabs.forEach(function(b){b.onclick=function(){
+    tabs.forEach(function(x){x.setAttribute('aria-selected',x===b)});
+    document.querySelectorAll('.tile').forEach(function(el){el.hidden=b.dataset.f!=='all'&&el.dataset.status!==b.dataset.f});
+  }});
+})();
+</script>
 </body>
 </html>

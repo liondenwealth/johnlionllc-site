@@ -6,13 +6,12 @@ Goal: turn johnlionllc.com into a PlayStation-style "app library": dark look, a 
 - `tools/apps.json`: the 7 apps (Sono Bestie, Out The Chat, Back 2 The Past, XAELO BOX, Bearings, Card Wallet, The Lost Library) with tagline, status, accent colour, blurb, features, icon source path.
 - `tools/make_covers.py`: builds `img/icons/<slug>.png`, `img/covers/<slug>.jpg` (600x800) and `img/hero/<slug>.jpg` (1600x900) from each app's icon. Run `python3 tools/make_covers.py`. Covers and hero checked by eye, they look right.
 
+## Also done (2026-10-18, local only)
+- `styles.css` dark-only + library styles; `tools/build.py` generates `index.html` and `apps/<slug>/index.html` (run `python3 tools/build.py` after editing apps.json); Sono Bestie shots in `img/shots/sono-bestie/`; /timeflies/ renamed to Back 2 The Past. Previewed desktop + phone, no console errors.
+
 ## Next
-1. Rewrite `styles.css` dark-only (bg #0b0d12, surface #141821, line #232937, accent gold #F0A93B for the studio). Keep the old classes (`.top .nav .page .card .btn .app-hero .phone .shots .features .feature .soon .tf`) so support.html, privacy.html and /timeflies/ still work. New: sticky header, carousel, tabs, tiles, app page.
-2. `tools/build.py`: generate `index.html` (carousel of the featured apps, tabs + cover tiles with the name and tagline under each, a short studio band, footer) and `apps/<slug>/index.html` from apps.json (hero, about, features, screenshots if any, status badge, privacy/support links). Back 2 The Past keeps its existing page at /timeflies/.
-3. Sono Bestie screenshots for its page: `../sono/marketing/screenshots/6.3/` (3_home, 5_quiz, 4_reference, 6_wellness), convert to jpg ~600 wide into `img/shots/sono-bestie/`.
-4. Rename "Time Flies" to "Back 2 The Past" in index and /timeflies/ (the App Store name Time Flies was taken; URL can stay).
-5. Preview: launch config `johnlion-site` (port 8097). Check desktop and phone width.
-6. ASK THE USER before `git push` (public GitHub Pages repo github.com/liondenwealth/johnlionllc-site, branch main; push = live on johnlionllc.com within minutes).
+1. privacy.html and support.html still say "Time Flies, Meep, XAELO BOX and Bearings": update names/app list (legal text, confirm wording with user).
+2. Check the other app pages and /timeflies/ by eye; ASK THE USER before `git push` (public repo liondenwealth/johnlionllc-site, main; live in minutes).
 
 ## Rules
 - Do not say an app is "out" or give an App Store button until it is live. Sono Bestie is in Apple review (submitted 2026-10-16, build 35); when it goes live set its status to `out` and add its App Store link (id 6820216499).
