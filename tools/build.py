@@ -3,7 +3,7 @@
 import html, json, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-apps = json.load(open(os.path.join(ROOT, "tools", "apps.json")))
+apps = [a for a in json.load(open(os.path.join(ROOT, "tools", "apps.json"))) if not a.get("hidden")]
 e = html.escape
 
 HEAD = """<!doctype html>
